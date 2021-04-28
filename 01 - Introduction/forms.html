@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Forms are used to organise information and gather user input.
+    We have two attributes
+    Method = How the information is passed to the server
+        GET = adds the information to the URL
+        POST = adds the information to the body of the request that we are sending
+    Action = Where I want my information to go. e.g a server/URL.
+    -->
+    <!-- As a guide if it is sensetive information the method would be post.-->
+    <form method="POST" action="">
+        <input type="text" name="username" placeholder="Enter your name here" />
+        <input type="password" name="password" placeholder="Enter your password here" />
+
+        <!-- Three input type which changes users keyboard types e.g when entering a telephone number.
+        tel makes it so it's only numeric values 
+        pattern = [0-9 means only numbers] {in the range of 11-13 numbers long} -->
+        <input type="tel" name="tel" pattern="[0-9] {11-13}" />
+        <!-- email formats it so that it requires a @ symbol in the input-->
+        <input type="email" name="email" placeholder="enter your email"/>
+        <!-- a drop down menu appears so that the user can choose a date -->
+        <input type="date"/>
+        <!-- looks for a url format -->
+        <input type="url" placeholder="Enter a URL"/>
+
+        <br/>
+
+        <!-- Checkboxes and radio buttons 
+        Checkboxes you can select multiple
+        Radio boxes you can only select one -->
+        <label> Please select your gender, choose one </label>
+        <input type="radio" name="gender" value="Male"> Male </input>
+        <input type ="radio" name="gender" value="Female"> Female </input>
+        
+        <br/>
+
+        <label> What is your favourite food? Select as many as you want </label>
+        <input type="checkbox" name="food" value="Chicken"/> Chicken </input>
+        <input type="checkbox" name="food" value="Burgers"/> Burgers </input>
+        <input type="checkbox" name="food" value="Pizza"/> Pizza </input>
+
+        <br/>
+
+        <!-- Creates a drop down menu for the user to choose from -->
+        <select name="Cars">
+            <option value="Mercedes"> Mercedes </option>
+            <option value="BMW"> BMW </option>
+            <option value="Ferrari"> Ferrari </option> 
+        </select>
+
+        <br/>
+        
+        <label> What is your favourite animal? </label>
+        <input list="animals"/>
+        <datalist id="Animals">
+            <option value="Dog"> 
+            <option value="cat">
+            <option value="horse">
+            <option value="Birds"> 
+
+        </datalist>
+
+
+
+
+
+        <button type="submit" name="Enter" value="submit button"> Submit </button>
+        <button type="reset"> Clear Values </button>
+
+    </form>
+</body>
+</html>

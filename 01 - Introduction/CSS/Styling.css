@@ -1,0 +1,19 @@
+header{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    text-align:center;
+    }
+
+.blue{
+    background-color: cyan;
+}
+.red{
+    color: red;
+}
+
+/* ID = # before name e.g #inline you call it with class="inline"
+Class = .before name e.g .blue is class blue
+You can add element names before any class
+*/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link href=where type = type of file rel=relationship -->
+    <!-- Linking my external style sheet -->
+    <!-- When making a class for styling you need a dot before the class name e.g .blue means class blue -->
+    <link href="./Styling.css" type="text/css" rel="Stylesheet" />
+
+    <!-- This way is embedded and looks for everything that belongs to these classes and uses these properties.-->
+    <style>
+        body {
+            background-color: rgb(104, 104, 104);
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1> Ryan </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Styling priority</h2>
+            <ol>
+                <li> Inline - Style attributing <b>INLINE</b> of the element </li>
+                <li> Embedded - Usually in a style tag </li>
+                <li> External - link to external style sheet</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2> About me </h2>
+            <p style="color: rgb(38, 190, 24)"> Hi my names Ryan </p>
+            <p class="blue"> This is going to be blue as we have specified it to use the blue class which we made above.</p>
+            <p class="red"> This is the red tag </p>
+        </section>
+    </main>
+</body>
+</html>
